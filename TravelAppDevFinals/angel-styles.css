@@ -1,0 +1,282 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+
+:root {
+  --Primary-color-dark: #196fa9;
+  --Primary-color-light: #3282b8;
+  --Secondary-color-light: #bbe1fa;
+  --Secondary-color-dark: #1b262c;
+  --Background-color: white;
+  --Border-color: rgba(18, 18, 18, 0.194);
+  --Font: "Quicksand";
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--Font);
+  background-color: var(--Background-color);
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+/* Header Styles */
+header {
+  background-color: var(--Primary-color-dark);
+  padding: 1.2rem 2rem;
+  box-shadow: 0 2px 4px var(--Border-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  color: var(--Secondary-color-light);
+  margin: 0;
+  font-size: 2rem;
+}
+
+nav a {
+  margin: 0 1rem;
+  text-decoration: none;
+  color: var(--Secondary-color-light);
+  font-weight: 500;
+  transition: color 0.2s ease-in-out;
+}
+
+nav a:hover {
+  color: white;
+}
+
+nav a.active {
+  color: white;
+  font-weight: 700;
+}
+
+/* Main Container Styles */
+.account-container {
+  padding: 2.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.payment-method-container {
+  padding: 2.5rem;
+  max-width: 600px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+h2 {
+  color: var(--Primary-color-dark);
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+}
+
+/* Account Card Styles */
+.account-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  box-shadow: 0 2px 8px var(--Border-color);
+  margin-bottom: 2rem;
+}
+
+.profile-pic {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--Primary-color-light);
+}
+
+.account-details p {
+  margin: 0.75rem 0;
+  color: var(--Secondary-color-dark);
+  font-size: 1rem;
+}
+
+.account-details strong {
+  color: var(--Primary-color-dark);
+  font-weight: 600;
+}
+
+/* Payment Method Form Styles */
+.payment-method-form {
+  background: white;
+  padding: 2rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 2px 8px var(--Border-color);
+}
+
+.payment-method-form label {
+  display: block;
+  margin-top: 1.25rem;
+  color: var(--Primary-color-dark);
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.payment-method-form select,
+.payment-method-form input[type="text"] {
+  width: 100%;
+  padding: 0.75rem;
+  margin-top: 0.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--Border-color);
+  font-family: var(--Font);
+  font-size: 1rem;
+  transition: border-color 0.2s ease-in-out;
+}
+
+.payment-method-form select:focus,
+.payment-method-form input[type="text"]:focus {
+  outline: none;
+  border-color: var(--Primary-color-light);
+}
+
+/* Button Styles */
+button {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: var(--Primary-color-dark);
+  color: white;
+  font-family: var(--Font);
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+button:hover {
+  background-color: var(--Primary-color-light);
+}
+
+.account-actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+/* Footer Styles */
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  background-color: var(--Primary-color-dark);
+  color: var(--Secondary-color-light);
+  margin-top: auto;
+}
+
+/* Edit Account Styles */
+.edit-container {
+  padding: 2.5rem;
+  max-width: 800px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.edit-form {
+  background: white;
+  padding: 2rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 2px 8px var(--Border-color);
+}
+
+.edit-form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: var(--Primary-color-dark);
+  font-weight: 600;
+  margin-top: 1.25rem;
+}
+
+.edit-form input {
+  width: 100%;
+  padding: 0.75rem;
+  margin-top: 0.25rem;
+  border: 1px solid var(--Border-color);
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-family: var(--Font);
+  transition: border-color 0.2s ease-in-out;
+}
+
+.edit-form input:focus {
+  outline: none;
+  border-color: var(--Primary-color-light);
+}
+
+.edit-form button {
+  margin-top: 2rem;
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1.1rem;
+}
+
+/* Sidebar Styles */
+#sidebar {
+  position: fixed;
+  width: 250px;
+  height: 100vh;
+  background-color: var(--Primary-color-dark);
+  padding: 1rem;
+}
+
+#sidebar ul {
+  list-style: none;
+}
+
+#sidebar li {
+  margin-bottom: 1rem;
+}
+
+#sidebar a, #sidebar button {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: var(--Secondary-color-light);
+  text-decoration: none;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  transition: background-color 0.2s ease-in-out;
+}
+
+#sidebar a:hover, #sidebar button:hover {
+  background-color: var(--Primary-color-light);
+}
+
+#sidebar .logo-img {
+  width: 45px;
+  height: auto;
+  padding: 5px;
+  display: block;
+  margin-left: 10px;
+}
+
+.dropdown-btn {
+  width: 100%;
+  text-align: left;
+  background: none;
+  border: none;
+  font-family: var(--Font);
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.sub-menu {
+  margin-left: 2rem;
+  display: none;
+}
+
+.sub-menu.active {
+  display: block;
+} 

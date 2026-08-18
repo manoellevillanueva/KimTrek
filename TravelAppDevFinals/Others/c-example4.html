@@ -1,0 +1,141 @@
+<html>
+<head>
+
+<title>KimTrek Travel</title>
+
+<style>
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: Arial, sans-serif; }
+
+.navbar {
+display: flex;
+justify-content: space-between;
+align-items: center;
+background-color: #e63946;
+padding: 10px 20px;
+color: white; }
+
+.logo-container {
+display: flex;
+align-items: center; }
+
+.logo {
+height: 40px;
+margin-right: 10px; }
+
+.search-container {
+display: flex;
+flex-grow: 1;
+max-width: 800px;
+margin: 0 20px;
+background-color: white;
+border-radius: 25px;
+overflow: hidden; }
+
+.search-section {
+flex: 1;
+padding: 10px 15px;
+border-right: 1px solid #ddd;
+text-align: center;
+cursor: pointer;
+transition: background-color 0.2s; }
+
+.search-section:hover {
+background-color: #f0f0f0; }
+
+.search-section:last-child {
+border-right: none; }
+
+.search-label {
+font-size: 12px;
+color: #666; }
+
+.search-input {
+font-size: 14px;
+color: #333; }
+
+.search-link {
+text-decoration: none;
+color: inherit;
+display: block;
+width: 100%;
+height: 100%; }
+
+.user-container {
+display: flex;
+align-items: center; }
+
+.menu-icon {
+margin-right: 10px;
+font-size: 20px;
+cursor: pointer; }
+
+.user-avatar {
+width: 35px;
+height: 35px;
+border-radius: 50%;
+object-fit: cover;
+cursor: pointer; }
+
+.main-content {
+padding: 20px;
+min-height: 100vh;
+background-color: #f8f9fa; }
+
+</style>
+
+</head>
+<body>
+<div class="navbar">
+<div class="logo-container">
+<img src="/api/placeholder/40/40" alt="KimTrek Logo" class="logo">
+<span class="brand-name">KimTrek</span>
+</div>
+
+<div class="search-container">
+<div class="search-section">
+<a href="search-destinations.html" class="search-link">
+<div class="search-label">Where?</div>
+<div class="search-input">Search Destinations</div>
+</a>
+</div>
+
+<div class="search-section">
+<a href="check-in.html" class="search-link">
+<div class="search-label">Check-in?</div>
+<div class="search-input">Add Check-in Date</div>
+</a>
+</div>
+
+<div class="search-section">
+<a href="check-out.html" class="search-link">
+<div class="search-label">Check-out?</div>
+<div class="search-input">Add Check-out Date</div>
+</a>
+</div>
+
+<div class="search-section">
+<a href="add-guests.html" class="search-link">
+<div class="search-label">Who?</div>
+<div class="search-input">Add Guests</div>
+</a>
+</div>
+</div>
+
+<div class="user-container">
+<div class="menu-icon">☰</div>
+<img src="/api/placeholder/35/35" alt="User Avatar" class="user-avatar">
+</div>
+</div>
+
+<div class="main-content">
+
+<h1 style="text-align: center; margin-top: 50px;"></h1>
+<p style="text-align: center; margin-top: 20px;"></p>
+</div>
+</body>
+</html>

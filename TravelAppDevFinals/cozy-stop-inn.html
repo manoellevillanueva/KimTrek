@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KimTrek - Cozy Stop Inn</title>
+    <link rel="stylesheet" href="c-destination.css" />
+  </head>
+  <body>
+    <header class="destination-header">
+      <div class="header-content">
+        <a href="../index.html" class="header-logo">
+          <h1>KimTrek</h1>
+        </a>
+        <nav class="header-nav">
+          <a href="Profile.html" class="active">Home</a>
+          <a href="ik-Homepage.html">Accommodations</a>
+          <a href="Profile.html">Profile</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="destination-main">
+      <div class="destination-container">
+        <div class="breadcrumb">
+          <a href="Profile.html">Home</a> / 
+          <a href="Motel.html">Motels</a> / 
+          <span>Cozy Stop Inn</span>
+        </div>
+
+        <div class="property-showcase">
+          <div class="property-header">
+            <div class="property-title-section">
+              <h2>Cozy Stop Inn</h2>
+              <p class="property-location">
+                <span class="location-icon">📍</span>
+                Cavite, Philippines
+              </p>
+            </div>
+            <div class="property-quick-info">
+              <span class="rating">★ 4.2 (31 reviews)</span>
+              <span class="price-badge">₱1,850/night</span>
+            </div>
+          </div>
+
+          <div class="image-gallery">
+            <div class="main-image">
+              <img src="images/cozyinn.jpg" alt="Cozy Stop Inn Main View">
+            </div>
+            <div class="image-grid">
+              <img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304" alt="Room Interior">
+              <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b" alt="Bathroom">
+              <img src="https://images.unsplash.com/photo-1584132967334-10e028bd69f7" alt="Parking Area">
+              <img src="https://images.unsplash.com/photo-1621293954908-907159247fc8" alt="Reception">
+            </div>
+          </div>
+
+          <div class="property-content">
+            <div class="property-details">
+              <div class="amenities-section">
+                <h3>Property Overview</h3>
+                <div class="amenities-grid">
+                  <div class="amenity-item">
+                    <span class="amenity-icon">👥</span>
+                    <p>2 guests maximum</p>
+                  </div>
+                  <div class="amenity-item">
+                    <span class="amenity-icon">🛏️</span>
+                    <p>1 bedroom</p>
+                  </div>
+                  <div class="amenity-item">
+                    <span class="amenity-icon">🚿</span>
+                    <p>Private bathroom</p>
+                  </div>
+                  <div class="amenity-item">
+                    <span class="amenity-icon">🚗</span>
+                    <p>Free parking</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="host-section">
+                <img src="images/host-mike.jpg" alt="Host Mike" class="host-image">
+                <div class="host-info">
+                  <h3>Managed by Mike</h3>
+                  <p><span class="superhost-badge">Professional Host</span> · 5 years hosting</p>
+                  <p class="host-description">Dedicated to providing clean, comfortable, and affordable accommodations with 24/7 service.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="booking-panel">
+              <div class="booking-card">
+                <div class="booking-price">
+                  <span class="amount">₱1,850</span>
+                  <span class="per-night">per night</span>
+                </div>
+
+                <form class="booking-form">
+                  <div class="date-picker">
+                    <div class="check-in">
+                      <label>Check-in</label>
+                      <input type="date" required>
+                    </div>
+                    <div class="check-out">
+                      <label>Check-out</label>
+                      <input type="date" required>
+                    </div>
+                  </div>
+
+                  <div class="guests-select">
+                    <label>Guests</label>
+                    <select required>
+                      <option value="1">1 guest</option>
+                      <option value="2">2 guests</option>
+                    </select>
+                  </div>
+
+                  <button type="submit" class="book-button">Book Now</button>
+                </form>
+
+                <div class="booking-summary">
+                  <div class="summary-item">
+                    <span>₱1,850 × 1 night</span>
+                    <span>₱1,850</span>
+                  </div>
+                  <div class="summary-item">
+                    <span>Cleaning fee</span>
+                    <span>₱300</span>
+                  </div>
+                  <div class="summary-item">
+                    <span>Service fee</span>
+                    <span>₱200</span>
+                  </div>
+                  <div class="summary-total">
+                    <span>Total</span>
+                    <span>₱2,350</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html> 

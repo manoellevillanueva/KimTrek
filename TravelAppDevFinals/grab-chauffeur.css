@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+
+:root {
+  --Primary-color-dark: #196fa9;
+  --Primary-color-light: #3282b8;
+  --Secondary-color-light: #bbe1fa;
+  --Secondary-color-dark: #1b262ccb;
+  --Background-color: white;
+  --Border-color: rgba(18, 18, 18, 0.194);
+  --Font: "Quicksand";
+  --Grab-green: #00b14f;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  min-height: 100dvh;
+  background-color: var(--Background-color);
+  color: var(--Secondary-color-light);
+  font-family: var(--Font);
+}
+
+.chauffeur-main {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.company-header {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.company-logo {
+  width: 120px;
+  height: auto;
+}
+
+.company-info h1 {
+  color: var(--Grab-green);
+  margin-bottom: 0.5rem;
+}
+
+.company-info p {
+  color: var(--Secondary-color-dark);
+  font-size: 1.1rem;
+}
+
+.booking-form {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  color: var(--Primary-color-dark);
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid var(--Border-color);
+  border-radius: 8px;
+  font-family: var(--Font);
+  font-size: 1rem;
+}
+
+.form-group textarea {
+  height: 100px;
+  resize: vertical;
+}
+
+.price-estimate {
+  background-color: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin: 2rem 0;
+}
+
+.price-estimate h3 {
+  color: var(--Primary-color-dark);
+  margin-bottom: 1rem;
+}
+
+.price-breakdown {
+  display: grid;
+  gap: 0.5rem;
+  color: var(--Secondary-color-dark);
+}
+
+.price-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.total-price {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--Border-color);
+  font-weight: 600;
+  color: var(--Grab-green);
+}
+
+.book-button {
+  background-color: var(--Grab-green);
+  color: white;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.2s ease;
+}
+
+.book-button:hover {
+  background-color: #009443;
+}
+
+@media (max-width: 768px) {
+  .chauffeur-main {
+    padding: 1rem;
+  }
+
+  .company-header {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .company-logo {
+    width: 100px;
+  }
+
+  .form-group {
+    margin-bottom: 1rem;
+  }
+} 
